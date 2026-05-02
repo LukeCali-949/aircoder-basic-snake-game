@@ -20,15 +20,15 @@ function drawGame() {
     }
 
     // Clear board
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = '#1a1a1a';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Draw snake
-    ctx.fillStyle = 'lime';
+    ctx.fillStyle = '#00ffcc';
     snake.forEach(part => ctx.fillRect(part.x * gridSize, part.y * gridSize, gridSize - 2, gridSize - 2));
 
     // Draw food
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = '#ff00ff';
     ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize - 2, gridSize - 2);
 }
 
